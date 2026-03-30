@@ -1,0 +1,27 @@
+Beskrivning
+Syftet med denna inlämning är att du ska få träna på flera moment; algoritmbeskrivning, inmatning, sortering och att skriva till en fil. Vidare ska programmet vara uppbyggt med lämpliga metoder (funktioner). Hela lösningsförslaget ska också visas i ett flödesschema, pseudokod eller annan metod för algoritmbeskrivning.
+Skriv ett litet program som en Console Application eller en Windows Forms Application som läser in uppgifter för ett antal säljare i en säljkår. Om du skriver en Console Application, så kan du låta användaren mata in hur många säljare han vill registrera.
+Indata till programmet är de uppgifter om säljare som matas in.
+Om inte boken tar upp hur du bygger en Console Application så kan du googla på det samt hur man gör för att läsa in värden från tangentbordet och skriva till skärmen samt till fil.
+Så här kan det se ut på skärmen:
+Namn:
+Personnummer:
+Distrikt:
+Antal sålda artiklar:
+Följande uppgifter ska alltså läsas in: namn, personnummer, vilket distrikt han/hon arbetar i, hur många artiklar han/hon har sålt under perioden.
+Detta för att man har ett bonussystem där viss del av lönen är fast och viss del rörlig. Den rörliga baseras på antal sålda artiklar (ni behöver dock inte beräkna lön). Man vill sen se statistik över försäljningen.
+Det ska finnas följande fyra nivåer: under 50 artiklar, 50-99 artiklar, 100-199 artiklar samt en nivå över 199 artiklar.
+När man läst in alla säljare ska resultatet sorteras innan det skrivs ut. Sorteringen sker på antal sålda artiklar. I utskriften ska alla resultat i sorterad ordning finnas med samt hur många säljare som ligger inom varje nivå och hur många artiklar var och en har sålt.
+Ex.
+Namn Persnr Distrikt Antal
+Kalle Anka 4503038990 Piteå 173
+1 säljare har nått nivå 3: 100-199 artiklar
+Musse Pigg 3502038964 Boden 202
+Snobben 7805055673 Luleå 203
+2 säljare har nått nivå 4: över 199 artiklar
+Osv…
+Observera att den sammanfattande informationen om hur många säljare som nått en viss nivå ska kommer efter det att man räknat upp säljarna i den nivån, precis som i exemplet ovan. Inte alla nivåantal sist.
+OBS!
+Resultatet ska visas både på skärmen och skrivas till en fil.
+Ange endast filnamnet då du definierar filen. Alltså ange inte någon sökväg. Då hamnar filen där .exe-filen ligger vilket ju är praktiskt.
+Testa programmet innan du lämnar in, så att du ser att det fungerar som det är tänkt!

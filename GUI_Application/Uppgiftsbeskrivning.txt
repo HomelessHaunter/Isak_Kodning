@@ -1,0 +1,47 @@
+Applikationen görs nu med ett GUI Graphical User Interface. Så du väljer en Windows Forms Applikation och på formuläret lägger du ut tre textboxar, åtminstone en ”button” samt t ex en multiline textbox för att visa resultatet.
+Syftet med uppgiften är att du ska få träna dig att skapa och använda en egen klass, använda formulär för att skapa ett trevligt användargränssnitt, parameteröverföring, mer algoritmer och stränghantering samt att skapa händelser (buttonklick) eftersom det i den här typen av applikationer är användarens val som styr vad som ska ske.
+Du ska också lägga till en meny med två val, ett för att Registrera person och ett för att Avsluta programmet. När användaren klickar Registrera person så visas formuläret för inmatning av personuppgifterna och en knapp för Kontroll av personnummer och avgörande av kön.
+Uppgiften består i att skapa en egen klass; personklass med följande egenskaper; förnamn, efternamn och personnummer. Användaren ska i formuläret ange ett förnamn,
+
+efternamn och personnummer i textfält. Du har sedan en metod i klassen som kontrollerar
+om personnumret är giltigt enligt någon av algoritmerna nedan samt en metod som kollar
+personens kön. Observera att klassen ska innehålla egenskaperna och metoderna enligt
+ovan. Tillbaka till formuläret returneras sedan resultatet, ett meddelande om
+personnumret är korrekt samt om personen är en man eller kvinna. Se exempel på
+gränssnitt nedan, det är fritt fram att ”tänka själv”, detta är bara exempel på hur man kan
+göra, men det finns många lösningar. Jag visar inte menyn i exemplet nedan utan du får
+se exempel från t ex boken eller googla på det.
+Ni ska nu implementera någon av de två personnummerkontroll-algoritmer, 21-algoritm
+eller Kontrollsiffran. Välj själv den du fastnar för.
+Den sista algoritmen beskriver hur man ser om det är en man eller kvinna.
+Testa programmet så att det funkar som det är tänkt, innan du skickar in.
+Lycka till!
+
+Kontroll av personnummer - 21Algoritm
+Ett kontrolltal räknas ut genom att man multiplicerar varje siffra i personnumret med omväxlande 2 och 1 (börja med 2).
+Siffersummorna för respektive produkt beräknas och dessa summeras sedan.
+Kontrolltalet ska då vara jämnt delbart med 10 för att personnumret ska vara korrekt.
+Nedan följer ett exempel på beräkning av ett kontrolltal:
+Personnummer: 720310-1212
+Kontrolltal:
+7 * 2 = 14 -> 1 + 4
+2 * 1 = 2 -> 2
+0 * 2 = 0 -> 0
+3 * 1 = 3 -> 3
+1 * 2 = 2 -> 2
+0 * 1 = 0 -> 0
+1 * 2 = 2 -> 2
+2 * 1 = 2 -> 2
+1 * 2 = 2 -> 2
+2 * 1 = 2 -> 2
+1 + 4 + 2 + 0 + 3 + 2 + 0 + 2 + 2 + 2 + 2 = 20
+20 / 10 = 2 Godkänt!
+Kontroll av personnummer - Kontrollsiffran
+Sista siffran i personnumret är en kontrollsiffra. Den räknas ut maskinellt med ledning av födelsetiden och födelsenumret.
+Här följer ett exempel på hur man kan räkna fram kontrollsiffran (enligt den s.k. modulus-10-metoden med vikterna 1 och 2):
+1. Siffrorna i födelsetiden och födelsenumret (dvs de 9 första siffrorna) multipliceras växelvis med 2 och 1.
+6 4 0 8 2 3 – 3 2 3 2 1 2 1 2 1 2 1 2 12,4,0,8,4,3, 6,2,6
+2. Lägg ihop siffrorna i produkterna. Obs! 12 räknas som 1+2 1+2+4+0+8+4+3+6+2+6=36
+3. Entalssiffran (6) i siffersumman dras från talet 10. 10-6=4. Restsiffran (4) blir kontrollsiffra vilket gör att personnumret i exemplet blir 640823-3234.
+Kön
+Födelsenumret består av tre siffror, där sista siffran är udda för män och jämn för kvinnor. T ex 500305-8970. Där är 3:e siffran i födelsenumret en sjua(7), dvs en man.
