@@ -1,0 +1,43 @@
+Beskrivning
+
+Konstruera ett program som beräknar hur mycket växel man ska få tillbaka när man handlat.  Du ska lösa uppgiften som en Console Application  OCH  som en Windows Forms Application. Om inte boken tar upp hur du bygger en Console Application så kan du googla på det samt hur man gör för att läsa in värden från tangentbordet och skriva till skärmen. Det är nyttigt att göra båda varianterna. 
+
+I windows Forms Applikationen ska du även ha en knapp för att avsluta applikationen.
+
+Zippa ihop varje projekt för sig och skicka sen via Canvas.
+
+När man ska distribuera en Console Application så behöver man egentligen bara .exe-filen. Det är lite mer komplicerat att distribuera en Windows Forms Application. Googla gärna på det om du är intresserad (deploy windows application). Men jag vill ju se koden som du presterat så då vill jag ha hela projekten komprimerade till mig. Dvs du ska inte göra en Deploy.
+
+Det ska också visas i vilka sedlar(500-, 200-, 100-, 50- och 20-lappar) samt mynt(10-, 5-, 1-kronor) som växeln ska utbetalas. 
+
+Indata till programmet skall vara det pris man ska betala och det belopp man faktiskt betalar med. Du behöver inte ange decimaler utan det räcker med helt antal kronor.
+
+Kolla också om användaren eventuellt betalat för lite och ta hand om det på lämpligt sätt.
+OBS! Växelvalör som ger noll ska inte skrivas ut.OBS!
+
+
+Så här kan det se ut på skärmen:
+Ange pris: 152 	(här skriver du in priset)
+Betalt: 500 		(hur mycket kunden betalt)    
+ (Här ska det visas hur mycket och i vilka valörer kunden får sin växel)
+Växel tillbaka:  	
+1 tvåhundralapp
+1 hundralappar
+2 tjugor
+1 femkrona
+3 enkronor
+
+eller
+
+Ange pris: 44 	(här skriver du in priset)
+Betalt: 764 		(hur mycket kunden betalt)    
+ (Här ska det visas hur mycket och i vilka valörer kunden får sin växel)
+Växel tillbaka:  	
+1 femhundralapp
+1 tvåhundralapp
+1 tjuga
+	
+
+Testa programmet innan du lämnar in.
+
+Lycka till!
