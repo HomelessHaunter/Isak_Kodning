@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y4OP6YCEBtYwZv/D1S8B6zToSukrjFzDIhludW6qtIbZ3MIpmY33ePK8VDr1DR+2EJXPFzRMtRc25CUznV3QIQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\isaane-8\\OneDrive - ltu.se\\L0002B\\Uppgift 1\\Upp1\\Upp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\isaane-8\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

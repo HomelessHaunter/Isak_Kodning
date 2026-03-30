@@ -1,0 +1,22 @@
+Så här fungerar det:
+
+Vi tar mitt personnummer som exempel: 5003058970
+
+Vi multiplicerar varannan siffra i personnumret med 2 och varannan med 1.
+Varje tal vi får, t ex 2*8 = 16, så lägger man ihop siffersumman, dvs 1+6 blir 7.
+
+2*5=10 	Delsumma=1+0=1
+1*0=0	Delsumma=0
+2*0=0	Delsumma=0
+1*3=3	Delsumma=3
+2*0=0	Delsumma=0
+1*5=5	Delsumma=5
+2*8=16	Delsumma=1+6=7
+1*9=9	Delsumma=9
+2*7=14	Delsumma=1+4=5
+1*0=0	Delsumma=0
+
+Lägg ihop alla delsummor:
+Summa=1+0+0+3+0+5+7+9+5+0=30
+
+Om Summa % 10 är lika med noll, dvs om det är jämnt delbart med 10 så är personnumret OK.

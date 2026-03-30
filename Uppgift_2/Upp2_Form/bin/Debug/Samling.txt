@@ -1,0 +1,8 @@
+Namn:  Personnummer:  Distrikt:  Antal:
+Sven Jonsson 67891234 Håby 23
+1 personer är på nivå 1!
+
+Isak Andersson 99999999 Hedekas 167
+1 personer är på nivå 3!
+
+Det var alla!

@@ -1,0 +1,31 @@
+Namn: Isak H.F. Andersson
+Mail: isaane-8@student.ltu.se
+Kurskod: L0002B
+Uppgift: 2
+
+Först så skapas en klass innan allting annat
+
+Sedan, då Formen laddar in, så definieras en lista baserat på klassen som skapades innan,
+som innehåller de variabler vi tänker använda: Namn, Number, Distrikt och Antal.
+
+Avsluta knappen definieras, så att en popup ruta kommer fram som frågar om man vill avsluta.
+Säger man ja, så stängs det av.
+Säger man nej, så går man tillbaks.
+
+Nu definieras Lägg Till knappen.
+När man klickar på knappen, så läggs värdena i textboxen först i listan.
+Sedan så tömms textboxerna.
+
+Nu definieras Sammanställningsknappen.
+Först så sorteras listan, genom att jämföra vardera objekt i den med den som kommer efter,
+och byter plats på dom om den efter har ett högre värde i Antal objektet.
+
+Nu definieras en textfil. Först så kollar programmet om den finns, och om den gör det,
+så raderas den och skapar sedan en fil med det namnet. Annars så skapar den bara en fil.
+Nu så skapas den skrivna texten som ska användas i filen via att först
+se hur många personer som ligger på vardera nivå, alltså <50, <100, <150 och <200.
+Sedan så kollar programmet om det finns någon i vardera grupp och om det gör, så skrivs
+dom in i filen tillsammans med hur många som hamnade på vardera del.
+
+I slutet så skrivs det in en sista mening för att visa filens slut och filen öppnas.
+Samtidigt så stängs Formen av.
