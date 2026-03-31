@@ -1,0 +1,44 @@
+I denna laboration ska vi använda en egenutvecklad datastruktur, hantera filer samt implementera en
+enkel kommandotolk. En viss felhantering kommer också att implementeras. I den här labben är det
+viktigt att vi beaktar kodstilen.
+Laborationsuppgiften är att skriva ett interaktivt program som hanterar en dynamisk telefonbok via en
+uppsättning enkla kommandon (dynamisk betyder att det går att ändra i telefonboken). Kommandona
+ska alla vara en rad långa och kunna uppdelas i ord som separeras av ett eller flera mellanslag.
+Telefonboken kommer till sin funktionalitet att likna den som används på t.ex. mobiltelefoner. I
+telefonboken ska namn kunna lagras och till varje namn ska man kunna associera flera telefonnummer
+(kan vara 0 st). Programmet ska presentera en prompt för användaren (prompt är det som skrivs ut till
+användaren precis innan användaren förväntas mata in något, ofta på samma rad). En uppsättning
+kommandon som användaren skriver in efter prompten ska implementeras. Följande kommandon ska
+finnas:
+ create name
+o Skapar ett nytt namn name I telefonboken. Inga telefonnummer associeras ännu. Om
+namnet redan finns ska ett felmeddelande ges.
+ add name number
+o Lägger till number till namnet name I telefonboken. Om namnet inte finns eller om
+numret redan finns associerat med name ska ett felmeddelande ges.
+ lookup name
+o skriver ut samtliga telefonnummer associerade med name på skärmen. Om namnet
+name inte finns ska ett felmeddelande ges. Utskrift ska ske i ett användarvänligt
+format (inte pythons interna utskrift av en datastruktur, typ lista, tupel eller
+dictionary).
+ delete name number
+o raderar numret number från namnet name. Om name inte finns ska ett felmeddelande
+ges. Om number inte finns behöver inget felmewddelande ges.
+ delete name
+o raderar namnet name samt alla telefonnummer associerade med name. Om name inte
+finns ska ett felmeddelande ges.
+ save filename
+o sparar nuvarande telefonbok I filen filename.
+ load filename
+o laddar in en ny telefonbok från filen filename. Den nuvarande telefonboken slängs
+bort och ersätts av den från filename. Om filen inte finns eller om filformatet är fel
+(det är fel I filen) så är programmets beteende odefinierat (det får bete sig hur som
+helst).
+ quit
+o quit avslutar programmet.
+Filformat för load och save
+Varje namn sparas på en egen rad i filen. Raden börjar med namnet, därefter följer ett semikolon
+varpå samtliga telefonnummer för detta namn följer där varje telefonnummer åtföljs av ett semikolon
+(vi får alltså ett semokolon även efter det sista telefonnumret).
+Vid inläsning av fil (load) är det tillåtet att förutsätta att filformatet är korrekt och detta behöver inte
+kontrolleras av load. (Om det är fel filformat får programemt bete sig hur som helst).
